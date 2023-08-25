@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush' Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="uploads/black_-_13495 (Original)" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="header">
+        <h1>'s Portfolio</h1>
+        <button class="contact-button" onclick="redirectToContact()">Contact</button>
+    </div>
+
+    <div class="intro-text">
+        <h2>Hi, I am Ayush</h2>
+        <p><span id="element"></span></p>
+        <div class="logo-buttons">
+            <div class="logo-button">
+                <a href="Resume/index.html" target="_blank"><img width="50" height="50" src="uploads/resumenew.png"
+                        alt="Resume"></a>
+                <p class="logo-name">Resume</p>
+            </div>
+            <div class="logo-button">
+                <a href="https://www.linkedin.com/in/ayush-shende-undefined-b8a15a268/"_blank"><img height="50"
+                        width="50" src="uploads/linkedin_logo.png" alt="LinkedIn"></a>
+                <p class="logo-name">LinkedIn</p>
+            </div>
+            <div class="logo-button">
+                <a href="#about"><img width="50" height="50" src="uploads/man.png" alt="About"></a>
+                <p class="logo-name">About</p>
+            </div>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="uploads/Photo.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="intro-text-h2"><b>About Me</b></h1>
+                            <br>
+                            <p>
+                            <p>I am Ayush Shende, a driven and passionate individual with a strong affinity for
+                                technology and an unwavering dedication to personal and professional growth. </p>
+                            I am a dedicated and motivated individual with a passion for technology and a strong
+                            desire to contribute to the success of any organization I am a part of. With a solid
+                            foundation in mobile application development and programming, I am eager to take on new
+                            challenges and learn from experiences that come my way. I aim to excel in my field and
+                            continuously grow professionally while making meaningful contributions to my teams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Front-End Developer', 'Andriod and IOS Developer', 'Back-End Developer'],
+                typeSpeed: 50,
+                loop: true,
+            });
+
+            function redirectToContact() {
+                var email = 'AyushShende@gmail.com';
+                window.location.href = 'mailto:' + email;
+            }
+        </script>
+</body>
+
+</html>
